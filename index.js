@@ -2,10 +2,10 @@
 const inquirer = require("inquirer");
 const { writeFile } = require("fs");
 const { createSVG } = require("./lib/createSVG");
-const shapes = require("./lib/shapes");
+const { Circle, Square, Triangle } = require("./lib/shapes");
 
 // Questions for users to answer to create logo
-const prompts = [
+const userInput = [
   {
     type: "input",
     name: "text",
@@ -32,20 +32,16 @@ const prompts = [
 
 // Prompt the user with the questions
 inquirer
-  .prompt(prompts)
+  .prompt(userInput)
   .then((answers) => {
-    if (answers.text.length > 3) {
-      console.log("Must enter a value of no more than 3 characters");
-    } else {
-      const logoData = createSVG(answers);
-      writeFile("logo.svg", logoData, (err) => {
-        if (err) {
-          console.error("Error writing logo file:", err);
-        } else {
-          console.log("Logo created successfully!");
-        }
-      });
-    }
+    const logoData = createSVG(answers);
+    writeFile("logo.svg", logoData, (err) => {
+      if (err) {
+        console.error("Error writing logo file:", err);
+      } else {
+        console.log("Logo created successfully!");
+      }
+    });
   })
   .catch((error) => {
     console.error("Error occurred:", error);
