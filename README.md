@@ -1,4 +1,4 @@
-# Professional README Generator
+# SVG Logo Maker
 
 ## Description
 
