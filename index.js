@@ -30,19 +30,3 @@ const userInput = [
   },
 ];
 
-// Prompt the user with the questions
-inquirer
-  .prompt(userInput)
-  .then((answers) => {
-    const logoData = createSVG(answers);
-    writeFile("logo.svg", logoData, (err) => {
-      if (err) {
-        console.error("Error writing logo file:", err);
-      } else {
-        console.log("Logo created successfully!");
-      }
-    });
-  })
-  .catch((error) => {
-    console.error("Error occurred:", error);
-  });
