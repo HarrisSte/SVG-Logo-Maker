@@ -2,8 +2,6 @@
 
 ## Description
 
-
-
 Introducing SVGLogoCLI, the dynamic command line tool that lets users create simple logos in a flash! With just a few commands, users can choose their text (up to three letters), pick a shape (triangle, square, or circle), and select its color. When users have answered all questions, a logo.svg file will be created and saved.
 <br>
 <br>
@@ -19,8 +17,6 @@ Introducing SVGLogoCLI, the dynamic command line tool that lets users create sim
 
 ## Table of Contents
 
-
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
@@ -30,40 +26,29 @@ Introducing SVGLogoCLI, the dynamic command line tool that lets users create sim
 
 ## Installation
 
-
-
 1. [Inquirer](https://docs.npmjs.com/)
 2. [Node.js](https://nodejs.org/en/docs)
 3. [Jest](https://jestjs.io/docs/getting-started) (for testing)
 
 ## Usage
 
+- `npm i inquirer@8.2.4`
 
-
-For use in creating simple logos for whatever the user needs.
+- `node index.js`
 
 ## Tests
-
-
 
 THIS IS WHERE I WILL PUT THE TEST VIDEO DEMO
 
 ## License
 
-
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<br>
-The license for this program is MIT
 
 ## Contributors
-
 
 Those who helped develop this program are
 
 ## Contact
-
-
 
 [GitHub](https://github.com/HarrisSte)
 <br>
