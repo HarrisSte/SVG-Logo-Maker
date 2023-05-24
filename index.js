@@ -54,5 +54,5 @@ inquirer
 
     return fs.writeFile("./examples/logo.svg", svg.render());
   })
-  .then(() => console.log("Created SVG Logo!"))
+  .then(() => console.log("Awesome! You've created your SVG Logo!"))
   .catch((err) => console.error(err));
