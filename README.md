@@ -19,6 +19,7 @@ Introducing SVGLogoCLI, the dynamic command line tool that lets users create sim
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Demonstration](#demonstration)
 - [Tests](#tests)
 - [License](#license)
 - [Contributors](#contributors)
@@ -36,9 +37,15 @@ Introducing SVGLogoCLI, the dynamic command line tool that lets users create sim
 
 - `node index.js`
 
+- `jest path/to/my-test.js`
+
+## Demonstration
+
+THIS IS WHERE I WILL PUT THE DEMO VIDEO
+
 ## Tests
 
-THIS IS WHERE I WILL PUT THE TEST VIDEO DEMO
+THIS IS WHERE I WILL PUT THE TEST PHOTO
 
 ## License
 
