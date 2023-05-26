@@ -1,9 +1,9 @@
 // Import required files/infomation
 const inquirer = require("inquirer");
 const fs = require("fs").promises;
-const svgFactory = require("./lib/svgFactory");
+const { SvgFactory } = require("./lib/svgFactory");
 
-const svg = new svgFactory();
+const svg = new SvgFactory();
 // Questions for users to answer to create logo
 const userInput = [
   {
