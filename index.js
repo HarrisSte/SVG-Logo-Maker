@@ -1,16 +1,15 @@
 // Import required files/infomation
 const inquirer = require("inquirer");
 const fs = require("fs").promises;
-const createSVG = require("./lib/createSVG");
-const { Circle, Square, Triangle } = require("./lib/shapes");
+const svgFactory = require("./lib/svgFactory");
 
+const svg = new svgFactory();
 // Questions for users to answer to create logo
 const userInput = [
   {
     type: "input",
     name: "text",
     message: "Enter up to three characters:",
-    // validate: (input) => input.length <= 3,
   },
   {
     type: "input",
@@ -32,27 +31,9 @@ const userInput = [
 
 inquirer
   .prompt(userInput)
-  .then(({ textColor, text, shape, shapeColor }) => {
-    let shapeInstance;
-
-    switch (shape) {
-      case "circle":
-        shapeInstance = new Circle();
-        break;
-      case "square":
-        shapeInstance = new Square();
-        break;
-      case "triangle":
-        shapeInstance = new Triangle();
-        break;
-    }
-    shapeInstance.setColor(shapeColor);
-
-    const svg = new createSVG();
-    svg.setText(text, textColor);
-    svg.setShape(shapeInstance);
-
-    return fs.writeFile("./examples/logo.svg", svg.render());
-  })
+  .then(({ textColor, text, shape, shapeColor }) =>
+    svg.createLogo(textColor, text, shape, shapeColor)
+  )
+  .then((logo) => fs.writeFile("./examples/logo.svg", logo))
   .then(() => console.log("Awesome! You've created your SVG Logo!"))
   .catch((err) => console.error(err));
