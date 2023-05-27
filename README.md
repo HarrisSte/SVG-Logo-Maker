@@ -39,13 +39,14 @@ Introducing SVGLogoCLI, the dynamic command line tool that lets users create sim
 
 - `npm test` (for testing)
 
-## Demonstration
+## Video Demonstration
 
-THIS IS WHERE I WILL PUT THE DEMO VIDEO
+[SVG-Generator-Walkthrough.webm](https://github.com/HarrisSte/SVG-Logo-Maker/assets/126029841/d6b1617e-f09b-4e8a-9a20-77c9b79aa175)
+
 
 ## Tests
 
-THIS IS WHERE I WILL PUT THE TEST PHOTO
+[SVG-Logo-Generator-TestDemo.webm](https://github.com/HarrisSte/SVG-Logo-Maker/assets/126029841/af2f69e5-5498-4996-8115-a4ddfc869cbd)
 
 ## License
 
