@@ -37,7 +37,7 @@ Introducing SVGLogoCLI, the dynamic command line tool that lets users create sim
 
 - `node index.js`
 
-- `jest path/to/my-test.js`
+- `npm test` (for testing)
 
 ## Demonstration
 
@@ -53,7 +53,7 @@ THIS IS WHERE I WILL PUT THE TEST PHOTO
 
 ## Contributors
 
-Those who helped develop this program are
+There was a great deal of research done to complete this project. part of that research was reading through the documentations for Jest, Node, and Inquirer. I also read through materials and articles fom W3Schools, MDN, StackOverflow, and class resources provided by the bootcamp. I recieved guidance from my classmates and colleague, Andrew Zimmerman, when I was working through the testing process.
 
 ## Contact
 
